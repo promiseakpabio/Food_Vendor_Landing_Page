@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+    background: url("images/hero.jpg") center/cover no-repeat;
+    height: 100vh;
+    color: white;
+    position: relative;
+    padding-top: 6px;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.hero nav{
+    width: 100%;
+}
+
+.hero ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.hero ul a{
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.hero ul a:hover{
+    color: black;
+    background-color: orange;
+    transition: 1s;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+}
+
+.overlay button {
+    padding: 12px 20px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* MENU */
+.menu-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 250px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* WHY */
+.why ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* BUTTON */
+button {
+    margin-top: 10px;
+}
+
+.about, .menu, .why, .testimonials, .contact {
+    background: linear-gradient(to bottom, #fff5e6, #ffd699);
+    padding: 60px 40px;
+}
+
+.why li{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    /* NAVBAR FIX */
+    .hero nav {
+        position: relative;
+    }
+
+    .hero ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero ul li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero ul a {
+        display: block;
+        width: 100%;
+        color: white;
+        max-width: 200px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    /* HERO TEXT BOX FIX */
+    .overlay {
+        position: relative;
+        height: 45vh;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .overlay h1 {
+        font-size: 2rem; /* smaller for phone */
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    .overlay button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* SECTION PADDING FIX */
+    section {
+        padding: 30px 15px;
+    }
+
+}
